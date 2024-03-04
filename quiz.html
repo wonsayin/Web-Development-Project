@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Undead Universe</title>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- Navbar (sit on top) -->
+<nav>
+  <h2>Undead Universe</h2>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="facts.html">Facts</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+<p>Would you like to take a quiz?</p>
+<button onclick="myFunction()">Click Here!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press One!")) {
+    txt = "YIPEE!";
+  } else {
+    txt = "Well, bye!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<br>
+
+  <form>
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last Name:</label><br>
+      <input type="text" id="lname" name="lname">
+  </form>
+  <form>
+    <br>
+    <p>Zombie Type?</p>
+      <input type="radio" name="zombietype" id="fast">
+      <label for="fast">Fast Zombies?</label>
+      <input type="radio" name="zombietype" id="slow">
+      <label for="slow">Slow Zombies?</label>
+  </form>
+  <form>
+    <br>
+    <p> Best Weapon?</p>
+      <input type="checkbox" name="weapon" id="gun">
+      <label for="gun">Gun</label>
+      <input type="checkbox" name="weapon" id="bat">
+      <label for="bat">Bat with Barbed Wire</label>
+      <input type="checkbox" name="weapon" id="bow">
+      <label for="bow">Bow and Arrow</label>
+      <input type="checkbox" name="weapon" id="knuckles">
+      <label for="knuckles">Brass Knuckles</label> <br><br>
+      <button type="button" onclick="alert('Thank you! Your Submission Went Nowhere!')">Submit</button>
+
+
+  </form>
+</form>
+</div>

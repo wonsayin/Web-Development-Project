@@ -1,0 +1,110 @@
+.content {
+  max-width: 200px;
+  margin: auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Tahoma, Serif;
+    color: #263238;
+  }
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 2rem; 
+    background: #EAF2F8; 
+    color: #AF7AC5;
+  }
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 1rem; 
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #AF7AC5
+  }
+
+  form {
+  /* Form outline */
+    padding: auto;
+    border: auto;
+    border-radius: auto;
+   }
+
+   label {
+    /* Uniform size & alignment */
+    display: auto;
+    width: auto;
+    text-align:auto;
+    font-family: garamond, verdana, times new roman;
+    font-size: 20px;
+   }
+
+   input,
+    textarea {
+      /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+     font-family: Arial, Helvetica, sans-serif;
+     border: none;
+     border-bottom: 2px solid lightblue;
+
+     /* Uniform text field size */
+     width: auto;
+     box-sizing: auto;
+
+
+
+
+    /* Match form field borders */
+     border-color: auto;
+     }
+
+
+
+
+    input:focus,
+    textarea:focus {
+    /* Additional highlight for focused elements */
+     border-color: auto;
+    }
+
+    textarea {
+      /* Align multiline text fields with their labels */
+       vertical-align: auto;
+  
+  
+  
+  
+       /* Provide space to type some text */
+       height: auto;
+      }
+
+      .button {
+        /* Align buttons with the text fields */
+          padding-left: auto; /* same size as the label elements */
+         }
+    
+    
+    
+    
+         button {
+            /* This extra margin represent roughly the same space as the space
+            between the labels and their text fields */
+           margin-left: auto;
+           background-color: lightblue;
+           border: none;
+           margin: 4px 2px;
+           cursor: pointer;
+               }
+    
